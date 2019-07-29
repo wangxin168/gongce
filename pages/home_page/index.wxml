@@ -1,0 +1,74 @@
+<!--pages/home_page/index.wxml-->
+<view class='wc_box'>
+    <image src="../../img/home_page/bg.png" class='box_bg' style="height:{{view.height}}px"></image>
+    <view class='list_box'>
+        <navigator  class='item' url="/pages/introduce/index">
+            <image src="../../img/home_page/list.png" class='list_box_nav_bg'></image>
+            <view class='list_box_nav_box'>
+                <view class='list_box_nav_left'>
+                    <image src="../../img/home_page/company.png" class='list_box_nav_company'></image>
+                </view>
+                <view class='list_box_nav_right'>
+                    <text class='list_box_nav_title'>单位介绍</text>
+                </view>
+            </view>
+        </navigator>
+        <navigator class='item' url="/pages/wc_guide/index">
+            <image src="../../img/home_page/list.png" class='list_box_nav_bg'></image>
+            <view class='list_box_nav_box'>
+                <view class='list_box_nav_left'>
+                    <image src="../../img/home_page/park.png" class='list_box_nav_company'></image>
+                </view>
+                <view class='list_box_nav_right'>
+                    <text class='list_box_nav_title'>公厕导引</text>
+                </view>
+            </view>
+        </navigator>
+        <navigator class='item' url="/pages/transfer_station/index">
+            <image src="../../img/home_page/list.png" class='list_box_nav_bg'></image>
+            <view class='list_box_nav_box'>
+                <view class='list_box_nav_left'>
+                    <image src="../../img/home_page/transfer.png" class='list_box_nav_company'></image>
+                </view>
+                <view class='list_box_nav_right'>
+                    <text class='list_box_nav_title'>中转站导引</text>
+                </view>
+            </view>
+        </navigator>
+        <navigator class='item' url="/pages/rest_station/index">
+            <image src="../../img/home_page/list.png" class='list_box_nav_bg'></image>
+            <view class='list_box_nav_box'>
+                <view class='list_box_nav_left'>
+                    <image src="../../img/home_page/rest.png" class='list_box_nav_company'></image>
+                </view>
+                <view class='list_box_nav_right'>
+                    <text class='list_box_nav_title'>休息站导引</text>
+                </view>
+            </view>
+        </navigator>
+        <navigator class='item' url="/pages/people_supervise/index">
+            <image src="../../img/home_page/list.png" class='list_box_nav_bg'></image>
+            <view class='list_box_nav_box'>
+                <view class='list_box_nav_left'>
+                    <image src="../../img/home_page/supervise.png" class='list_box_nav_company'></image>
+                </view>
+                <view class='list_box_nav_right'>
+                    <text class='list_box_nav_title'>最美环卫工人随手拍</text>
+                </view>
+            </view>
+        </navigator>
+        <navigator class='item' url="/pages/suggest/index">
+            <image src="../../img/home_page/list.png" class='list_box_nav_bg'></image>
+            <view class='list_box_nav_box'>
+                <view class='list_box_nav_left'>
+                    <image src="../../img/home_page/proposal.png" class='list_box_nav_company'></image>
+                </view>
+                <view class='list_box_nav_right'>
+                    <text class='list_box_nav_title'>建议</text>
+                </view>
+            </view>
+        </navigator>
+    </view>
+</view>
+
+<button class='mark' wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo"></button>

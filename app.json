@@ -1,0 +1,26 @@
+{
+  "pages": [
+    "pages/home_page/index",
+    "pages/suggest/mysuggest/index",
+    "pages/people_supervise/index",
+    "pages/wc_area/index",
+    "pages/wc_area/wc_area_map/index",
+    "pages/suggest/index",
+    "pages/rest_station/index",
+    "pages/transfer_station/index",
+    "pages/wc_guide/index",
+    "pages/introduce/index"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#202020",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "sitemapLocation": "sitemap.json"
+}

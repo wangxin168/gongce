@@ -1,0 +1,43 @@
+<!--pages/suggest/index.wxml-->
+<view class='suggest_box'>
+    <view class='suggest_nav'>
+        <view class='{{nav_style[0]}}' bindtap='tab_nav_item' data-index="0">
+            <text>全部</text>
+        </view>
+        <view class='{{nav_style[1]}}' bindtap='tab_nav_item' data-index="1">
+            <text>未处理</text>
+        </view>
+        <view class='{{nav_style[2]}}' bindtap='tab_nav_item' data-index="2">
+            <text>已处理</text>
+        </view>
+    </view>
+    <view class='suggest_cont'>
+        <!-- 暂无记录 -->
+        <view class='suggest_norecord' wx:if="{{record_type==0}}" style="height:{{view.height}}px;">
+            <image src="../../img/norecord.png" class='norecord'></image>
+            <text class='norecord_text'>暂无记录</text>
+        </view>
+        <!--全部  -->
+        <view class='suggest_all' wx:if="{{record_type==1}}">
+            <view class='undisposed_item' wx:for="{{suggest_all_list}}">
+                <view class='item_title'>
+                    <text>单号：{{item.order_sn}}</text>
+                    <text class='item_type' wx:if="{{item.status==1}}">未处理</text>
+                    <text class='item_type' wx:if="{{item.status==2}}">已处理</text>
+                </view>
+                <text class='item_cont'>{{item.description}}</text>
+                <view class='item_footer'>
+                    <view class='item_time'>
+                        <text>创建时间：{{item.ctime}}</text>
+                    </view>
+                    <view class='item_btn' wx:if="{{item.status==1}}" data-id="{{item.id}}" bindtap='suggest_del'>删除</view>
+                </view>
+                <view class='item_back' wx:if="{{item.status==2}}">
+                    <text>{{item.feed_content}}</text>
+                    <text class='item_back_time'>反馈时间：{{item.feed_time}}</text>
+                </view>
+            </view>
+        </view>
+        <button class='wc_btn' bindtap='my_suggest'>我要提建议</button>
+    </view>
+</view>

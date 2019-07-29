@@ -1,0 +1,2 @@
+<!--pages/wc_area/wc_area_map/index.wxml-->
+<map id="map" longitude="116.46" latitude="39.92" class='map' markers="{{markers}}" bindtap='controltap' show-location bindtap="openMap" style="width:100%;height:{{view.height}}px" bindcallouttap="location"></map>

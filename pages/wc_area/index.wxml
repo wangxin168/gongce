@@ -1,0 +1,33 @@
+<!--pages/wc_area/index.wxml-->
+<view class='wc_area_box'>
+    <swiper indicator-color="#fff"  indicator-active-color="#00C99D" indicator-dots="true" autoplay="true" interval="3000" duration="1000" circular="true" class='wc_area_banner'>
+        <block wx:for="{{service_detail.images}}">
+            <swiper-item>
+                <image src="{{item}}" class="slide-image"/>
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class='wc_area_nav'>
+        <view class='wc_area_nav_title'>{{service_detail.name}}</view>
+        <view class='wc_area_nav_cont'>
+            <image src='../../img/addressOn.png' class='wc_address'></image>
+            <text>{{service_detail.address}}</text>
+            <text class='wc_area_nav_center'>|</text>
+            <text>距当前位置{{service_detail.distance}}公里</text>
+        </view>
+        <view class='wc_area_mapbox'>
+            <map class='wc_area_map' bindtap='location' bindmarkertap='location' show-location longitude="{{map.lng}}" latitude="{{map.lat}}" markers="{{map.markers}}"></map>
+        </view>
+    </view>
+    <view class='wc_area_cont'>
+        <view class='wc_area_cont_title'>硬件配置</view>
+        <view class='wc_area_cont_box'>
+                <view class='list_one' wx:for="{{service_detail.message}}">
+                    <!-- <image src='../../img/area.png'></image> -->
+                    <text>{{item}}</text>
+                </view>
+        </view>
+    </view>
+    <button class='wc_btn' bindtap='location'>线路导航</button>
+    <!-- <image src='../../img/btn.png' class='wc_btn'></image> -->
+</view>

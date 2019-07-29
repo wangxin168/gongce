@@ -1,0 +1,24 @@
+<!--pages/transfer_station/index.wxml-->
+<view class='wc_guide_box'>
+    <view class='wc_guide_title'>
+        <image src="../../img/address.png" class='wc_guide_address'></image>
+        <text>您当前的位置：{{current_address}}</text>
+    </view>
+    <view class='wc_guide_cont'>
+        <view class='item' bindtap='wc_area' wx:for="{{wc_guide_info}}" data-id="{{item.id}}">
+            <view>
+                <image src='{{item.images}}' mode='scaleToFill'></image>
+            </view>
+            <view class='wc_guide_cont_text'>
+                <view class='wc_guide_cont_title'>{{item.name}}</view>
+                <view class='wc_guide_cont_address'>{{item.address}}</view> 
+                <view class='wc_guide_cont_length'>
+                    {{item.city_name}}
+                    <text>|</text>
+                    距离当前位置{{item.distance}}公里
+                </view>
+            </view>
+        </view>
+        <view class='hint_message' wx:if="{{wc_guide_info.length == 0 }}">暂无资源</view>
+    </view>
+</view>

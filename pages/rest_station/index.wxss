@@ -1,0 +1,2 @@
+/* pages/rest_station/index.wxss */
+@import '../wc_guide/index.wxss'

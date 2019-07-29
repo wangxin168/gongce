@@ -1,0 +1,16 @@
+
+.mark{
+    position:absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    background:none;
+}
+.hint_message{
+    height:96rpx;
+    text-align: center;
+    line-height: 96rpx;
+    color: #535353;
+}
+

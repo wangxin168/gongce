@@ -1,0 +1,2 @@
+/* pages/suggest/mysuggest/index.wxss */
+@import "../../people_supervise/index.wxss";

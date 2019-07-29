@@ -1,0 +1,60 @@
+<!--pages/people_supervise/index.wxml-->
+<view class='people_supervise_box'>
+    <form bindsubmit='formsubmit'>
+        <view class='people_info_box'>
+            <view class='people_info_item'>
+                <view class='people_info_box_name'>
+                    <view>姓名</view>
+                </view>
+                <view class='people_info_box_cont'>
+                    <input type='text' value='' name="username" placeholder='请输入姓名'></input>
+                </view>
+            </view>
+            <view class='people_info_item'>
+                <view class='people_info_box_name'>
+                    <view>手机号</view>
+                </view>
+                <view class='people_info_box_cont'>
+                    <input type='number' placeholder='输入手机号' maxlength="11" bindinput="input_val" name="userphone"></input>
+                </view>
+            </view>
+            <view class='people_info_item'>
+                <view class='people_info_box_name'>
+                    <view>所在区域</view>
+                </view>
+                <view class="section people_info_box_cont">
+                    <picker bindchange="bindPickerChange" value="{{index}}" range="{{area_list}}" mode="selector">
+                        <view class="picker">
+                            {{area_list[index]}}
+                        </view>
+                    </picker>
+                </view>
+            </view>
+            <view class='people_info_item'>
+                <view class='people_info_box_name'>
+                    <view>具体地址</view>
+                </view>
+                <view class='people_info_box_cont'>
+                    <input type='text' value='' placeholder='输入地址' name="useraddress"></input>
+                </view>
+            </view>
+        </view>
+        <!--情况描述  -->
+        <view class='people_info_detail'>
+            <view class='people_info_detail_title'>请输入情况描述</view>
+            <textarea class='people_detail_text' name="describtion"></textarea>
+        </view>
+        <view class='people_info_detail'>
+            <view class='people_info_detail_title'>图片上传</view>
+            <view class='img_box'>
+                 <view class='img_box_item' wx:for="{{poster_src}}" wx:key="*this">
+                    <image src="{{item}}"></image>
+                    <image src="../../img/xxx.png" class='img_xxx' bindtap='delimg' data-index="{{index}}"></image>
+                </view> 
+                <image src="{{poster_src_add}}" bindtap='up_img'></image>
+            </view>
+        </view>
+        <view class='people_info_thank'>感谢您对我们工作的支持，我们将第一时间进行回复处理.</view>
+        <button class='wc_btn' name="wc_btn" form-type='submit'>提交</button>
+    </form>
+</view>

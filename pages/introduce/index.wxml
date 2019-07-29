@@ -1,0 +1,20 @@
+<!--pages/introduce/index.wxml-->
+
+<import src="../../wxParse/wxParse.wxml" />
+<view class='introduce_box'>
+    <swiper indicator-color="#fff" indicator-active-color="#00C99D" indicator-dots="true" autoplay="true" interval="3000" duration="1000" circular="true" class='wc_area_banner'>
+        <block wx:for="{{introduceImg}}">
+            <swiper-item>
+                <image src="{{item}}" class="slide-image introduce_tp" />
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class='introduce_cont'>
+        <view class='introduce_cont_title'>
+            <text>怀来环卫处</text>
+        </view>
+        <view class='introduce_cont_text'>
+            <template is="wxParse" data="{{wxParseData:introduce.nodes}}" />
+        </view>
+    </view>
+</view>

@@ -1,0 +1,32 @@
+<!--pages/suggest/mysuggest/index.wxml-->
+<view class='people_supervise_box'>
+    <form bindsubmit='formsubmit'>
+        <view class='people_info_box'>
+            <view class='people_info_item'>
+                <view class='people_info_box_name'>
+                    <view>姓名</view>
+                </view>
+                <view class='people_info_box_cont'>
+                    <input type='text' value='' name="username" placeholder='请输入姓名'></input>
+                </view>
+            </view> 
+
+            <view class='people_info_item'>
+                <view class='people_info_box_name'>
+                    <view>手机号</view>
+                </view>
+                <view class='people_info_box_cont'>
+                    <input type='number' placeholder='输入手机号' maxlength='11' bindinput='input_val' name="userphone"></input>
+                </view>
+            </view>
+
+        </view>
+        <!--情况描述  -->
+        <view class='people_info_detail'>
+            <view class='people_info_detail_title'>请输入情况描述</view>
+            <textarea class='people_detail_text' name="describtion"></textarea>
+        </view>
+        <view class='people_info_thank'>感谢您对我们工作的支持，我们将第一时间进行回复处理.</view>
+        <button class='wc_btn' name="wc_btn" form-type='submit'>提交</button>
+    </form>
+</view>

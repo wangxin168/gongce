@@ -1,0 +1,49 @@
+/* pages/wc_guide/index.wxss */
+
+.wc_guide_address {
+    height: 28rpx;
+    width: 26rpx;
+    margin-right: 20rpx;
+}
+
+.wc_guide_title {
+    height: 80rpx;
+    line-height: 80rpx; 
+    font-size: 26rpx;
+    border-bottom: 20rpx solid #F3F4F6;
+    /* box-sizing: border-box; */
+    padding-left: 32rpx;
+    color: #A4A4A4;
+}
+
+
+.wc_guide_cont .item image {
+    width: 240rpx;
+    height: 164rpx;
+}
+
+.wc_guide_cont .item {
+    display: flex;
+    display: -webkit-flex; /* Safari */
+    /* justify-content: space-between; */
+    background-color: #fff;
+    padding: 28rpx 0 20rpx 32rpx;
+    border-bottom: 20rpx solid #F3F4F6;
+}
+
+.wc_guide_cont .item .wc_guide_cont_text {
+    font-size: 26rpx;
+    color:#8D8D8D;
+    padding-left:38rpx;
+    padding-top: 6rpx;
+}
+
+.wc_guide_cont .item .wc_guide_cont_text .wc_guide_cont_title {
+    font-size: 34rpx;
+    color:#1A1A1A;
+}
+.wc_guide_cont_address{
+    padding: 20rpx 0 10rpx 0;
+    color: #00C99D;
+}
+

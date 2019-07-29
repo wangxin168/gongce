@@ -1,0 +1,116 @@
+/* pages/people_supervise/index.wxss */
+/* .section{
+    background:#CABBC7; 
+    margin:20rpx; 
+    padding:20rpx 
+
+} */
+.people_supervise_box{
+    color: #1A1A1A;
+    font-size: 30rpx;
+    padding-bottom: 100rpx;
+}
+.people_info_box {
+    padding-left: 32rpx;
+    line-height: 90rpx;
+}
+
+.people_info_box_name {
+    width: 30%;
+}
+
+.people_info_box_cont {
+    width: 69%;
+}
+.people_info_box_contsinge{
+    width:44%;
+}
+.people_info_box_code{
+    width:25%;
+    color: #00C99D;
+    font-size: 28rpx;
+    text-decoration: underline;
+}
+.people_info_box_contsinge input{ 
+    line-height: 90rpx;
+    height: 90rpx;
+}
+.people_info_box_cont input {
+    line-height: 90rpx;
+    height: 90rpx;
+}
+.people_info_item {
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    color: #1a1a1a;
+    font-size: 30rpx;
+}
+.people_info_detail{
+    padding: 0 32rpx;
+}
+.people_detail_text{
+    width:100%;
+    height:270rpx;
+    background: #F7F8FA;
+}
+.people_info_detail_title{
+    line-height: 90rpx;
+}
+.img_box{
+    display: flex;
+    flex-wrap:wrap;
+}
+.img_box_item{
+    position: relative;
+    width:220rpx;
+}
+.people_info_detail .img_xxx{
+    position: absolute;
+    width:40rpx;
+    height:40rpx;
+    top:-10rpx;
+    right:10rpx;
+}
+.people_info_detail image{
+    width:192rpx;
+    height:192rpx;
+    margin-top: 10rpx;
+}
+.people_info_thank{
+    font-size: 28rpx;
+    color: #8D8D8D;
+    padding-left: 32rpx;
+    line-height: 90rpx;
+    margin-bottom: 20rpx;
+}
+.wc_btn{
+    width:530rpx;
+    height:90rpx;
+    background:#00C99D;
+    outline: none;
+    border:none;
+    border-radius:45rpx;
+    color: #fff;
+    font-size: 30rpx;
+    line-height: 90rpx;
+    box-shadow: 2rpx 8rpx 2rpx #7fe4cd;
+}
+.area_list{
+    width:100%;
+    height:400rpx;
+    line-height: 96rpx;
+    text-align: center;
+    position: fixed;
+    left:0;
+    bottom:0;
+    background: #fff;
+    z-index: 111;
+}
+.area_list_block{
+    width:100%;
+    background: rgba(0,0,0,.6);
+    position: fixed;
+    left:0;
+    top:0;
+    z-index: 11;
+}
